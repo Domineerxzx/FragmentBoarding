@@ -1,0 +1,28 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 27
+    defaultConfig {
+        applicationId "com.triplebro.farfetchproject"
+        minSdkVersion 15
+        targetSdkVersion 27
+        versionCode 1
+        versionName "type_unclick.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    //implementation 'com.android.support.constraint:constraint-layout:type_unclick.type_unclick.0'
+    //testImplementation 'junit:junit:myself_unclick.12'
+    //androidTestImplementation 'com.android.support.test:runner:type_unclick.0.brand_unclick'
+    //androidTestImplementation 'com.android.support.test.espresso:espresso-core:loves_unclick.0.brand_unclick'
+    implementation 'org.jetbrains:annotations-java5:15.0'
+}
